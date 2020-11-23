@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.applied-filter .filter-name:after {
+    color: #6c757d;
+    content: "❯";
+    font-size: 90%;
+    padding-left: 0.3em;
+}
+
+.applied-filter .filter-name:hover:after {
+    color: #f8f9fa;
+    content: "❯";
+    font-size: 90%;
+    padding-left: 0.3em;
+}
+
+a:hover{color:black;text-decoration: underline;}
+img{max-width:100%;}
+body.blacklight-catalog-show #appliedParams{display:none;}
+
+.bg-cofc{background-color:#34343E;}
+.bg-accent{background-color:#dcdcdc;}
+
+.btn-primary {
+    color: #fff;
+    background-color: #22445E;
+    border-color: #e3e3e3;
+}
+
+a{color:#22445E;}
+
+.bg-success, .facet-limit-active .card-header{
+    background-color:#22445E !important;
+    color:white;
+}
+
+
+h1,h2,h3,h4{font-family: 'Josefin Sans', serif;}
+body,p,a,h5{font-family: 'Raleway', sans-serif;}
+.thicc{font-weight:bold;}
+
+nav ul a{font-family: 'Raleway', serif; font-size:18px; color:black;}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: white;
+    text-decoration:underline;
+}
+
+.cofcRedText{color:#22445E;}
+.cofcRedBg{background-color:#22445E;}
+
+.navbar-brand {
+    flex: 0 0 100%;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 0rem;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    max-width: 90%;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+}
+
+.border-success, .facet-limit-active {
+    border-color: #62929E !important;
+}
+
+.facet-values li .selected {
+    color: #62929E !important;
+}
+
+
+.document-thumbnail img{max-width:200px !important;}
+
+a.facet-select{font-size:0.9rem !important;}
+span.facet-label span.selected{font-size:0.9rem !important;}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #62929E;
+    border-color: #dc7e54;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #22445E;
+    background-color: #fff;
+    border: 1px solid #22445E;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #22445E;
+    border-color: #22445E;
+}
+
+li.more_like_this_document{list-style-type:none;}
+
+#facet-exclude-pages > div > ul > li > span.facet-count{display:none;}

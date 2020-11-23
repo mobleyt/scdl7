@@ -1,0 +1,16 @@
+<div class="jumbotron text-center">
+  <h1 class="jumbotron-heading"><%= t('blacklight.welcome') %></h1>
+
+  <p class="lead">The South Carolina Digital Library provides free access to historic materials, such as photographs, manuscripts, journals, books, oral histories, objects, etc. illustrating the history and culture of South Carolina from over 40 cultural heritage institutions across the state. Over 200,000 items have been added so far.</p>
+  <p>
+    <%= link_to 'View the Main SCDL Site', 'https://scmemory.org', class: 'btn btn-primary' %>
+  </p>
+</div>
+
+<script>
+  Blacklight.onLoad(function() {
+    $('#about .card-header').one('click', function() {
+      $($(this).data('target')).load($(this).find('a').attr('href'));
+    });
+  });
+</script>
